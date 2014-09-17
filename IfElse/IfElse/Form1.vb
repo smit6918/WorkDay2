@@ -12,8 +12,18 @@ Public Class Form1
         num2 = CDbl(st2)
 
         ' Your code here
+        If num1 < num2 Then
+            largerNum = num2
+        Else
+            largerNum = num1
 
-        txtResult.Text = "Not implemented yet"
+        End If
+
+        txtResult.Text = "THe larger number is" & largerNum
+
     End Sub
 
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class
